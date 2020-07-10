@@ -12,9 +12,9 @@ description: Learn how to deploy your Discovery Agent and Traceability Agent so 
 * Read [AMPLIFY Central and Axway API Manager connected overview](/docs/central/connect-api-manager/)
 * Be sure you have [Prepared AMPLIFY Central](/docs/central/connect-api-manager/prepare-amplify-central/)
 * You will need a basic knowledge of Axway API Management solution
-   * Where the solution is running (host / port / path to the logs / users)
-   * How to create / publish an API
-   * How to call an API
+    * Where the solution is running (host / port / path to the logs / users)
+    * How to create / publish an API
+    * How to call an API
 
 ## Objectives
 
@@ -31,7 +31,9 @@ The Discovery Agent only discovers APIs that have the tag(s) defined in the agen
   As soon as an API is published, the identifier of the asset in AMPLIFY Central is kept in a custom field at the API level in API Manager to help the agent remember what is already published.
 
 The agent can run in the following modes:
+
 * With a yaml configuration file having the same name as the agent binary - discovery_agent.yaml:
+
     * Default: located in the same directory as the agent binary.
     * Optional: use a dedicated folder where the configuration file is located (use the –pathConfig flag in the agent command line to access the file path).
     * Advanced configuration: properties inside the configuration file can reference environment variables. This enables you to set up only one configuration file that addresses different behaviors (depending on the environment variables). See [Discovery Agent variables](/docs/central/connect-api-manager/discovery-agent-variables/).
@@ -67,8 +69,8 @@ The value for *clientId* can be found in Service Account. See [Create a Service 
      cd /home/APIC-agents
      ./discovery_agent
      ```
-    
-    * To verify that the agent is up and running, open another shell command and run:
+
+   * To verify that the agent is up and running, open another shell command and run:
       ```shell
       cd /home/APIC-agents
       ./discovery_agent --status
@@ -130,7 +132,7 @@ The Discovery Agent listens to the subscription event.
 * If failure, subscription status **Subscription failed** will appear. You can delete the subscription and start again from the **Save the API and publish** step.
 * The subscriber consumes the API.
 
-   * Workaround:
+    * Workaround:
 
       1. In the UI, select the API.
       2. Expand **Manage selected**.
@@ -157,7 +159,7 @@ subscriptions:
     port: 25
     fromAddress: fromaddress@axway.com
     username: fromaddress@axway.com
-    password: 
+    password:
     subscribe:
       subject: Subscription Notification
       body: |
@@ -175,4 +177,4 @@ subscriptions:
       subject: Subscription Removal Failed Notification
       body: |
         Could not unsubscribe to Catalog Item: <a href= ${catalogItemUrl}> ${catalogItemName} </a>
- ```        
+ ```      
