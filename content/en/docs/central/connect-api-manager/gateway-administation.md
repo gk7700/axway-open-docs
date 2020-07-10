@@ -56,8 +56,9 @@ The agent can run in the following modes:
    * `env_vars` file
    * `discovery_agent.yml` (example shown below)
 
-{{< alert title="Tip" color="primary" >}}The value for *teamID* can be found in [AMPLIFY Central > Access > Teams](https://apicentral.axway.com/access/teams/). The value for *tenantID* can be found in AMPLIFY Central Platform > Organization. The value for *clientId* can be found in Service Account. See [Create a Service in AMPLIFY Central](/docs/central/connect-api-manager/prepare-amplify-central/).
-{{< /alert >}}
+The value for *teamID* can be found in [AMPLIFY Central > Access > Teams](https://apicentral.axway.com/access/teams/). 
+The value for *tenantID* can be found in AMPLIFY Central Platform > Organization. 
+The value for *clientId* can be found in Service Account. See [Create a Service in AMPLIFY Central](/docs/central/connect-api-manager/prepare-amplify-central/).
 
 5. Run the Discovery Agent:
    * Open a shell and run the following commands to start up your agent.  Add necessary [Discovery Agent flags](/doc/central/connect-api-manager/discovery-agent-flags/).
@@ -173,4 +174,4 @@ subscriptions:
       subject: Subscription Removal Failed Notification
       body: |
         Could not unsubscribe to Catalog Item: <a href= ${catalogItemUrl}> ${catalogItemName} </a>
- ```      
+ ```
