@@ -56,11 +56,7 @@ The agent can run in the following modes:
    * `env_vars` file
    * `discovery_agent.yml` (example shown below)
 
-{{< alert title="Tip" color="primary" >}}The value for *teamID* can be found in [AMPLIFY Central > Access > Teams](https://apicentral.axway.com/access/teams/).
-
-The value for *tenantID* can be found in AMPLIFY Central Platform > Organization.
-
-The value for *clientId* can be found in Service Account. See [Create a Service in AMPLIFY Central](/docs/central/connect-api-manager/prepare-amplify-central/).
+{{< alert title="Tip" color="primary" >}}The value for *teamID* can be found in [AMPLIFY Central > Access > Teams](https://apicentral.axway.com/access/teams/). The value for *tenantID* can be found in AMPLIFY Central Platform > Organization. The value for *clientId* can be found in Service Account. See [Create a Service in AMPLIFY Central](/docs/central/connect-api-manager/prepare-amplify-central/).
 {{< /alert >}}
 
 5. Run the Discovery Agent:
